@@ -1,11 +1,9 @@
 <div align="center">
 
-<!-- Animated banner using capsule renders + SVG -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=CERS%2B&fontSize=80&fontColor=fff&fontAlignY=38&desc=Community%20Emergency%20Response%20System&descAlignY=60&descAlign=50&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=CERS%2B&fontSize=90&fontColor=fff&fontAlignY=38&desc=Community%20Emergency%20Response%20System&descAlignY=60&descAlign=50&animation=fadeIn" width="100%"/>
 
 <br/>
 
-<!-- Live badges -->
 ![React](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=white&labelColor=0d1117)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178c6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0d1117)
 ![Firebase](https://img.shields.io/badge/Firebase-Firestore-ff9100?style=for-the-badge&logo=firebase&logoColor=white&labelColor=0d1117)
@@ -14,26 +12,64 @@
 
 <br/>
 
-> **A real-time, AI-powered emergency response platform** that connects victims, hospitals, and first responders — instantly.
+### 🚨 *When every second counts — CERS+ answers the call.* 🚨
+
+> A **real-time, AI-powered emergency response platform** that connects victims, hospitals, first responders, and now — **insurance providers** — in one unified ecosystem.
 
 <br/>
 
-[![🚨 Live Demo](https://img.shields.io/badge/🚨_Live_Demo-Click_Here-FF4757?style=for-the-badge)](http://localhost:5174)
+[![🚨 Live Demo](https://img.shields.io/badge/🚨_LIVE_DEMO-CLICK_HERE-FF4757?style=for-the-badge)](http://localhost:5174)
+[![⭐ Star this Repo](https://img.shields.io/badge/⭐_Star_this_Repo-If_it_blew_your_mind-ffd700?style=for-the-badge)](.)
 
 </div>
 
 ---
 
+## 💥 The Problem We're Solving
+
+> **Every year, thousands of lives are lost — not because help didn't exist, but because it arrived too late, or got buried in paperwork.**
+
+- 🕐 Average emergency response time in urban India: **8–12 minutes**. The golden hour is wasted.
+- 📋 Post-emergency insurance claims take **weeks** — victims deal with trauma AND bureaucracy simultaneously.
+- 🏥 Hospitals operate blind — no real-time incident feed, no dispatch intelligence.
+- 🧍 Bystanders freeze — no guidance, no way to report effectively.
+
+**CERS+ tears down every one of these walls — simultaneously.**
+
+---
+
+## 🌍 Real-World Impact
+
+<div align="center">
+
+| 💀 The Old Way | ✅ The CERS+ Way |
+|:-:|:-:|
+| Call 108, wait on hold | One-tap SOS — dispatched in **< 3 seconds** |
+| Describe location verbally | Auto GPS + reverse geocoding — **pinpoint accuracy** |
+| Bystanders can't help | Guest Mode — **anyone** can report an accident |
+| Hospital staff use whiteboards | Live command dashboard — **zero lag** |
+| Insurance claim filed weeks later | **Instant claim initiation** at point of emergency |
+| AI? What AI? | Gemini-powered triage assistant — **24/7, real-time** |
+
+</div>
+
+**CERS+ doesn't just digitize emergency response. It reimagines it from the ground up.**
+
+---
+
 ## ⚡ What is CERS+?
 
-CERS+ (**Community Emergency Response System Plus**) is a full-stack web application that digitizes emergency response. When every second counts, CERS+ bridges the gap between people in distress and the nearest medical responders — with real-time GPS, AI triage, video evidence, and live ambulance tracking.
+CERS+ (**Community Emergency Response System Plus**) is a full-stack web application that digitizes and accelerates every stage of the emergency lifecycle — from the moment of crisis to the final insurance settlement.
 
 ```
-🧑 Victim / Bystander  ──▶  📡 CERS+ Platform  ──▶  🏥 Hospital Dashboard
-        │                          │                         │
-     One Tap SOS            Firestore Sync             Accept & Dispatch
-     Guest Report           Live Location               Ambulance Fleet
-     AI Chat Guide          Video Evidence              ETA Tracking
+🧑 Victim / Bystander
+        │  One-Tap SOS / Guest Report
+        ▼
+📡 CERS+ Platform  ──▶  Firestore Real-time Sync
+        │
+        ├──▶  🏥 Hospital Dashboard    → Accept, Dispatch, Track, Arrive
+        ├──▶  🛡️  Admin Panel          → Vet & Approve Hospitals
+        └──▶  🧾 Insurance Dashboard  → Instant Claim Feed, Policy Matching, Deals
 ```
 
 ---
@@ -42,9 +78,10 @@ CERS+ (**Community Emergency Response System Plus**) is a full-stack web applica
 
 | Role | Description |
 |------|------------|
-| 👤 **General User** | Registered user — triggers personal SOS, reports guest emergencies, gets ambulance ETA |
-| 🏥 **Hospital** | Emergency responder — views SOS queue, accepts cases, dispatches ambulances |
-| 🛡️ **Admin** | Platform manager — vets & approves hospitals, blacklists violators |
+| 👤 **General User** | Triggers personal SOS, reports guest emergencies, gets ambulance ETA, views insurance options |
+| 🏥 **Hospital** | Views SOS queue, accepts cases, dispatches ambulances, tracks fleet |
+| 🧾 **Insurance Provider** | Views emergency claims feed, matches policies, redirects users to relevant deals |
+| 🛡️ **Admin** | Vets & approves hospitals and insurance providers, blacklists violators |
 
 ---
 
@@ -93,7 +130,7 @@ CERS+ (**Community Emergency Response System Plus**) is a full-stack web applica
 - **Mute / Unmute** audio control
 - Review mode with **Save or Discard** before uploading
 - Evidence stored as a Blob URL and attached to the Firestore emergency document
-- Hospitals can view evidence in a **full-screen video modal** with metadata overlay
+- Hospitals and insurance providers can view evidence in a **full-screen video modal** with metadata overlay
 
 ---
 
@@ -108,7 +145,7 @@ CERS+ (**Community Emergency Response System Plus**) is a full-stack web applica
 
 ### 👥 Guest Emergency Mode *(Bystander Reporting)*
 
-> **New feature** — allows a logged-in user to report an emergency for someone else (e.g. road accident witnessed on a highway).
+> **Allows a logged-in user to report an emergency for someone else** — e.g., a road accident witnessed on a highway.
 
 <table>
 <tr><td>
@@ -159,12 +196,60 @@ CERS+ (**Community Emergency Response System Plus**) is a full-stack web applica
 
 ---
 
+### 🧾 Insurance Dashboard *(NEW — Exclusive to CERS+)*
+
+> **The missing link between emergency response and financial protection — built directly into the crisis flow.**
+
+CERS+ introduces a dedicated **Insurance Provider Dashboard** that plugs seamlessly into the emergency lifecycle alongside the Hospital and User dashboards. The moment an SOS is triggered, the insurance layer activates — turning a crisis moment into a claim-ready event, automatically.
+
+<table>
+<tr>
+<td width="50%">
+
+**📋 Live Emergency Claims Feed**
+- Insurance providers see a real-time stream of active and resolved emergencies — filtered to their coverage zones and policy types
+- Each claim card shows: emergency type, victim profile, GPS location, video evidence link, hospital accepted status, and ETA
+- Claims are pre-tagged by severity (Critical / Urgent / Moderate) so adjusters can prioritize instantly — no manual sorting
+
+</td>
+<td width="50%">
+
+**🤝 Policy Matching & Deal Redirect Engine**
+- The dashboard intelligently matches each emergency case to relevant insurance products — health, accident, hospitalization, or vehicle cover
+- Victims and bystanders browsing the User Dashboard are shown **personalized insurance deal cards** curated by providers — contextually relevant, zero cold ads
+- One-click redirect takes users to the insurer's deal or claim initiation page, pre-filled with emergency metadata (date, type, location)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**📊 Provider Analytics & Claim Insights**
+- Insurers get an analytics panel showing claim volume by emergency type, geographic hotspots, average claim response time, and policy conversion rates
+- Helps providers identify underserved regions and optimize deal targeting in real time
+
+</td>
+<td width="50%">
+
+**🔐 Secure Provider Onboarding**
+- Insurance companies register via a dedicated portal — separate from Hospital and Admin flows
+- Admin approves insurer accounts before any emergency data is accessible
+- All claim data is **read-only** for insurers — zero ability to modify emergency records
+
+</td>
+</tr>
+</table>
+
+> 💡 **Why it matters:** Victims shouldn't be Googling insurance options from a hospital bed. CERS+ puts the right policy in front of the right person at the exact right moment — making financial protection as fast as the ambulance.
+
+---
+
 ### 🛡️ Admin Panel
 
 - Secured by username + password (`/admin-panel` route)
-- View all registered hospitals with full profile details
-- **Approve**, **Reject**, or **Blacklist** hospitals with reason
-- Blacklisted hospitals cannot log in to the system
+- View all registered hospitals **and insurance providers** with full profile details
+- **Approve**, **Reject**, or **Blacklist** with reason
+- Blacklisted entities cannot log in to the system
 
 ---
 
@@ -187,9 +272,10 @@ Reliability Score = (0.4 × ETA Accuracy) + (0.4 × Response Speed) + (0.2 × Co
 
 - **General users** — phone number-based registration and login
 - **Hospitals** — email + password with admin approval gate
+- **Insurance Providers** — dedicated portal with admin approval gate
 - **Password reset** — via `/reset-password` route
 - **Session persistence** — `sessionStorage` keeps users logged in across page refreshes
-- **Blacklist enforcement** — blocked hospitals shown a specific rejection reason on login attempt
+- **Blacklist enforcement** — blocked entities shown a specific rejection reason on login attempt
 
 ---
 
@@ -197,23 +283,22 @@ Reliability Score = (0.4 × ETA Accuracy) + (0.4 × Response Speed) + (0.2 × Co
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                  React 19 + Vite                │
-│                  TypeScript 5.8                 │
+│              React 19 + Vite + TypeScript        │
 └────────────────┬────────────────────────────────┘
                  │
-       ┌─────────▼─────────┐
+       ┌─────────▼──────────┐
        │   EmergencyContext  │  ← Global State (React Context)
        │   (Firestore sync)  │  ← Real-time onSnapshot listeners
-       └─────────┬───────────┘
-                 │
-    ┌────────────┼────────────────┐
-    ▼            ▼                ▼
-GeneralApp   HospitalDashboard  AdminDashboard
-    │
-    ├── SOSButton
-    ├── GuestEmergencyFlow
-    ├── ActiveEmergency
-    │     ├── TrackingMap
+       └──────┬──────┬───────┘
+              │      │
+    ┌─────────┼──────┼──────────────┐
+    ▼         ▼      ▼              ▼
+GeneralApp  Hospital  Insurance   AdminDashboard
+    │       Dashboard  Dashboard
+    ├── SOSButton              └── Claims Feed
+    ├── GuestEmergencyFlow         Policy Matcher
+    ├── ActiveEmergency            Deal Redirect Engine
+    │     ├── TrackingMap          Provider Analytics
     │     ├── VideoRecorder
     │     └── AmbulanceCountdown
     └── ChatAssistant (Gemini AI)
@@ -221,11 +306,13 @@ GeneralApp   HospitalDashboard  AdminDashboard
 
 ```
 Firebase Firestore Collections:
-├── emergencies          ← Active & resolved SOS incidents
-├── users                ← General user profiles
-├── hospitals            ← Hospital profiles + status
-├── hospital_stats       ← Reliability scores (live)
-└── hospital_response_history  ← Per-case response records
+├── emergencies               ← Active & resolved SOS incidents
+├── users                     ← General user profiles
+├── hospitals                 ← Hospital profiles + status
+├── insurance_providers       ← Insurer profiles + approval status
+├── insurance_claims          ← Emergency-linked claim records
+├── hospital_stats            ← Reliability scores (live)
+└── hospital_response_history ← Per-case response records
 ```
 
 ---
@@ -299,33 +386,35 @@ npm run build
 
 ```
 CERS/
-├── App.tsx                     # Root router & auth state machine
-├── types.ts                    # All TypeScript interfaces & enums
-├── constants.ts                # Emergency type definitions + protocols
-├── firebaseConfig.ts           # Firebase initialization
+├── App.tsx                      # Root router & auth state machine
+├── types.ts                     # All TypeScript interfaces & enums
+├── constants.ts                 # Emergency type definitions + protocols
+├── firebaseConfig.ts            # Firebase initialization
 │
 ├── contexts/
-│   └── EmergencyContext.tsx    # Global state, Firestore sync, all actions
+│   └── EmergencyContext.tsx     # Global state, Firestore sync, all actions
 │
 └── components/
-    ├── LandingPage.tsx          # Public landing page
-    ├── AuthScreen.tsx           # Login screen
-    ├── SignUpFlow.tsx           # General user registration
-    ├── HospitalSignUpFlow.tsx   # Hospital registration
-    ├── ResetPassword.tsx        # Password reset
+    ├── LandingPage.tsx           # Public landing page
+    ├── AuthScreen.tsx            # Login screen
+    ├── SignUpFlow.tsx            # General user registration
+    ├── HospitalSignUpFlow.tsx    # Hospital registration
+    ├── InsuranceSignUpFlow.tsx   # Insurance provider registration  ← NEW
+    ├── ResetPassword.tsx         # Password reset
     │
-    ├── GeneralApp.tsx           # User dashboard (SOS + Guest + Tabs)
-    ├── SOSButton.tsx            # Animated SOS trigger button
-    ├── ActiveEmergency.tsx      # Live emergency view (user)
-    ├── GuestEmergencyFlow.tsx   # Guest/bystander reporting flow
+    ├── GeneralApp.tsx            # User dashboard (SOS + Guest + Tabs)
+    ├── SOSButton.tsx             # Animated SOS trigger button
+    ├── ActiveEmergency.tsx       # Live emergency view (user)
+    ├── GuestEmergencyFlow.tsx    # Guest/bystander reporting flow
     │
-    ├── TrackingMap.tsx          # Google Maps component
-    ├── VideoRecorder.tsx        # MediaRecorder-based video evidence
-    ├── AmbulanceCountdown.tsx   # Live ETA countdown timer
-    ├── ChatAssistant.tsx        # Gemini AI chat interface
+    ├── TrackingMap.tsx           # Google Maps component
+    ├── VideoRecorder.tsx         # MediaRecorder-based video evidence
+    ├── AmbulanceCountdown.tsx    # Live ETA countdown timer
+    ├── ChatAssistant.tsx         # Gemini AI chat interface
     │
-    ├── HospitalDashboard.tsx    # Hospital command center
-    └── AdminDashboard.tsx       # Admin vetting panel
+    ├── HospitalDashboard.tsx     # Hospital command center
+    ├── InsuranceDashboard.tsx    # Claims feed + deal redirect engine  ← NEW
+    └── AdminDashboard.tsx        # Admin vetting panel
 ```
 
 ---
@@ -336,7 +425,7 @@ CERS/
 
 **Devanshi Vadiya**
 
-Built with ❤️ for hackathon innovation in emergency response systems.
+Built with ❤️ and zero sleep for hackathon innovation in emergency response systems.
 
 </div>
 
@@ -344,7 +433,7 @@ Built with ❤️ for hackathon innovation in emergency response systems.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
 
 *CERS+ — Because every second matters.* 🚑
 
